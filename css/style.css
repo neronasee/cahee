@@ -279,8 +279,9 @@ a.ba-button--gallery {
 }
 
 .ba-subscribe {
-	background: url(../img/subscribe-bg.jpg);
+	background: url(../img/subscribe-bg.jpg) 50% no-repeat;
 	padding-bottom: 160px;
+
 }
 .ba-subscribe__text {
 	max-width: 570px;
