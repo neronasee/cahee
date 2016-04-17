@@ -474,13 +474,7 @@ a.ba-button--blog {
 .ba-author span {
 	color: #ff2b58;
 }
-.ba-footer__link,
-.ba-footer__link:visited {
-	color:#B9B9B9;
-}
-.ba-footer__link:hover {
-	color: #fff;
-}
+
 
 .ba-footer__logo {
 	margin-top: 30px;
