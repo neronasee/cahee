@@ -33,6 +33,8 @@ a.ba-button{
 	line-height: 55px;
 	min-height: 55px;
 	padding: 0 26px;
+	background: #FF6033;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 }
 input[type="submit"]:hover,
 input[type="button"]:hover,
@@ -74,14 +76,16 @@ select:focus {
 textarea {
 
 }
-.ba-grid + .ba-grid {
+/* .ba-grid + .ba-grid {
 	margin-top: 30px;
-}
+} */
 .ba-grid:not(.ba-grid-nopad) > [class*="ba-width-"] {
 	padding-left: 30px;
+	padding-top: 30px;
 }
 .ba-grid {
 	margin-left: -30px;
+	margin-top: -30px;
 }
 
 /* Layout */
@@ -164,8 +168,6 @@ textarea {
 	margin: 0;
 }
 .ba-button--intro {
-	background: #FF6033;
-	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 	margin-top: 13px;
 }
 .ba-button--intro:hover {
@@ -202,8 +204,13 @@ textarea {
 }
 .ba-services-list {
 	list-style: none;
-	padding: 76px 0 0 100px;
+	padding: 0;
 	margin: 0;
+}
+@media (min-width: 768px) {
+	.ba-services-list {
+		padding: 76px 0 0 100px;
+	}
 }
 .ba-service {
 	background-color: #fff;
@@ -270,6 +277,8 @@ a.ba-button--gallery {
 .ba-gallery__img {
 	display: block;
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
+
+	width: 100%;
 }
 .ba-button--gallery:hover {
 	background: #43667c;
@@ -330,7 +339,7 @@ a.ba-button--gallery {
 	overflow: hidden;
 }
 .ba-blog-item:hover .ba-blog-item__text{
-	box-shadow: 0px -4px 20px 0px rgba(0, 0, 0, 0.5);
+	color: #68e494;
 }
 .ba-headline--blog {
 	max-width: 570px;
@@ -343,24 +352,29 @@ a.ba-button--gallery {
 .ba-blog-item__img {
 	display: block;
 	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+
+	width: 100%;
 }
 .ba-blog-item__text {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	height: 49%;
 	color: #FFF;
 	background: linear-gradient(to top, #000 0%, transparent 100%);
-	padding: 20px 20px 0;
+	padding: 20px;
 	text-align: left;
-	transition: box-shadow .2s ease-in;
+	transition: color .2s ease-in;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 }
 
 .ba-blog-item__title {
 	font-size: 20px;
 	line-height: 1.25;
 	font-weight: 700;
-	margin-bottom: 15px;
+	margin: 0;
 }
 .ba-blog-item__info {
 	font-size: 13px;
@@ -474,7 +488,12 @@ a.ba-button--blog {
 .ba-author span {
 	color: #ff2b58;
 }
-
+@media (max-width: 479px) {
+	.ba-author,
+	.ba-copyright {
+		text-align: center;
+	}
+}
 
 .ba-footer__logo {
 	margin-top: 30px;

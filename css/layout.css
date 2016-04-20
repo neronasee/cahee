@@ -120,9 +120,9 @@ img {
     clear: both;
 }
 
-.ba-grid + .ba-grid {
+/* .ba-grid + .ba-grid {
     margin-top: 20px;
-}
+} */
 
 [class*="ba-width-"] {
     width: 100%;
